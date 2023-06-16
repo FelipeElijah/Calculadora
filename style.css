@@ -12,15 +12,17 @@ html,body{
     align-items: center;
     display: block;
     box-shadow: 0 0 50px #3c3c3c;
-    /*border: 1px solid black;*/
+    
 }
 
 .screen-container{
     height: 25%;
     width: 100%;
-    align-items: center;
-    /*border: 1px solid black;*/
-    background-color: #15181f; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #223648; 
 }
 
 .buttons-container{
@@ -34,7 +36,7 @@ html,body{
 .main-button{
     width: 49.5%;
     height: 20%;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     border: 3px solid white;
     background-color: #98f4ee;
 }
@@ -43,14 +45,35 @@ html,body{
     background-color: #83d5d6;
 }
 
+.main-button:active {
+    background-color: #b0f9fa;
+}
+
 .regular-button{
-    width: 24.525%;
+    width: 24.45%;
     height: 20%;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     border: 3px solid white;
     background-color: #98f4ee;
 }
 
 .regular-button:hover{
     background-color: #83d5d6;
+}
+
+.regular-button:active {
+    background-color: #b0f9fa;
+}
+
+.previous-result {
+    padding: 30px;
+    font-size: 2.0rem;
+    color: rgb(255, 255, 255);
+    opacity: 65%;
+}
+
+.current-result {
+    padding: 15px;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
 }
